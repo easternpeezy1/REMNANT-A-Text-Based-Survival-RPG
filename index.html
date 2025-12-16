@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apocalypse RPG</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Your HTML structure stays the same -->
+    <div class="game-container">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apocalypse RPG - Survive the Wasteland</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>⚠ APOCALYPSE RPG ⚠</h1>
+            <div class="subtitle">Survive the Wasteland</div>
+        </div>
+
+        <div class="game-screen">
+            <div class="sidebar">
+                <div class="stat-block">
+                    <h3>👤 CHARACTER</h3>
+                    <div class="stat-item">
+                        <span class="stat-label">Name:</span>
+                        <span class="stat-value" id="player-name">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Level:</span>
+                        <span class="stat-value" id="player-level">1</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">EXP:</span>
+                        <span class="stat-value" id="player-exp">0/20</span>
+                    </div>
+                </div>
+
+                <div class="stat-block">
+                    <h3>❤️ VITALS</h3>
+                    <div class="stat-item">
+                        <span class="stat-label">Health:</span>
+                        <span class="stat-value" id="player-health">100/100</span>
+                    </div>
+                    <div class="stat-bar">
+                        <div class="stat-bar-fill" id="health-bar" style="width: 10%;">10%</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Stamina:</span>
+                        <span class="stat-value" id="player-stamina">100/100</span>
+                    </div>
+                    <div class="stat-bar">
+                        <div class="stat-bar-fill" id="stamina-bar" style="width: 100%;">100%</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Energy:</span>
+                        <span class="stat-value" id="player-energy">100/10</span>
+                    </div>
+                    <div class="stat-bar">
+                        <div class="stat-bar-fill" id="energy-bar" style="width: 100%;">100%</div>
+                    </div>
+                </div>
+
+                <div class="stat-block">
+                    <h3>⚔️ COMBAT</h3>
+                    <div class="stat-item">
+                        <span class="stat-label">Attack:</span>
+                        <span class="stat-value" id="player-attack">50</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Defense:</span>
+                        <span class="stat-value" id="player-defense">30</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Luck:</span>
+                        <span class="stat-value" id="player-luck">0</span>
+                    </div>
+                </div>
+
+                <div class="stat-block">
+                    <h3>💰 CURRENCY</h3>
+                    <div class="stat-item">
+                        <span class="stat-label">Scrap:</span>
+                        <span class="stat-value" id="player-money">$10000</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Gold Coins:</span>
+                        <span class="stat-value" id="player-gold">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Bottle Caps:</span>
+                        <span class="stat-value" id="player-caps">0</span>
+                    </div>
+                </div>
+
+                <div class="stat-block">
+                    <h3>🎒 INVENTORY</h3>
+                    <div class="inventory-grid" id="inventory-display">
+                        <div style="color: #666; text-align: center; grid-column: 1/-1;">Empty</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="output-window" id="output-window">
+                    <div class="log-entry system">
+                        <strong>--- WELCOME TO THE APOCALYPSE ---</strong><br>
+                        Survive as a loner in a ruined world ruled by zombies and ruthless humans...<br><br>
+                        What is your survivor's name?
+                    </div>
+                </div>
+
+                <div class="input-container active" id="input-container">
+                    <div class="input-prompt" id="input-prompt">Enter your survivor name:</div>
+                    <input type="text" class="input-field" id="input-field" placeholder="Type here and press Enter..." autocomplete="off">
+                    <button class="menu-btn" id="submit-btn" style="width: 100%;">Submit (or press Enter)</button>
+                </div>
+
+                <div class="menu-container" id="menu-container">
+                    <div class="menu-title">--- Survivor Outpost ---</div>
+                    <div class="menu-options" id="menu-options"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ... all your game HTML ... -->
+
+    <!-- Load scripts in order -->
+    <script type="module" src="./js/renderer.js"></script>
+
+</body>
+</html>
