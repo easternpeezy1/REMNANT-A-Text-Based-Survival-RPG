@@ -26,7 +26,6 @@ Thumbs.db
 !*.json
 !*.html
 !*.gitignore
-!*.bat
 
 # Allow specific files by name
 !README.md
